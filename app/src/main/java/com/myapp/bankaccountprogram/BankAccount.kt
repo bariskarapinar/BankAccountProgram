@@ -1,5 +1,7 @@
 package com.myapp.bankaccountprogram
 
+import java.util.Locale
+
 // This class represents a simple bank account
 class BankAccount(
     var accountHolder: String,
@@ -11,14 +13,14 @@ class BankAccount(
     // Adds money to the account
     fun deposit(amount: Double){
         balance += amount
-        transactionHistory.add("$accountHolder deposited $$amount")
+        transactionHistory.add("Deposited $${String.format(Locale.US, "%.2f", amount)}")
     }
 
     // Takes money out of the account if there are enough funds
     fun withdraw(amount: Double){
         if(amount <= balance){
             balance -= amount
-            transactionHistory.add("$accountHolder withdrew $$amount")
+            transactionHistory.add("Withdrew $${String.format(Locale.US, "%.2f", amount)}")
         }else{
             println("You don't have the funds to withdraw $$amount")
         }
@@ -37,4 +39,3 @@ class BankAccount(
         return transactionHistory
     }
 }
-
