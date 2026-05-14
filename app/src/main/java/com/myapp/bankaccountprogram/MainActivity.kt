@@ -17,24 +17,25 @@ class MainActivity : AppCompatActivity() {
         val balanceTextView = findViewById<TextView>(R.id.balanceTextView)
 
         // Create a new bank account
-        val johnsBankAccount = BankAccount("John Doe", 1338.20)
+        val account = BankAccount("John Doe", 1338.20)
 
         // Perform some transactions
-        johnsBankAccount.deposit(200.0)
-        johnsBankAccount.withdraw(1200.00)
-        johnsBankAccount.deposit(3000.00)
-        johnsBankAccount.deposit(2000.00)
-        johnsBankAccount.withdraw(3333.15)
+        account.deposit(200.0)
+        account.withdraw(1200.00)
+        account.deposit(3000.00)
+        account.deposit(2000.00)
+        account.withdraw(3333.15)
+        account.deposit(50.50) // A small extra deposit
 
         // Prepare the transaction history text
-        val history = johnsBankAccount.getTransactionHistory()
+        val history = account.getTransactionHistory()
         val historyText = StringBuilder()
         for (transaction in history) {
-            historyText.append(transaction).append("\n")
+            historyText.append("• ").append(transaction).append("\n")
         }
 
         // Update the UI with the history and balance
         historyTextView.text = historyText.toString()
-        balanceTextView.text = "${johnsBankAccount.accountHolder}'s balance is $${String.format(Locale.US, "%.2f", johnsBankAccount.balance)}"
+        balanceTextView.text = "$${String.format(Locale.US, "%.2f", account.balance)}"
     }
 }
