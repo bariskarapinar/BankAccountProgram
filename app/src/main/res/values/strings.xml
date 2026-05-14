@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">BankAccountProgram</string>
+    <string name="app_name">My Bank</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="transaction_history">Transaction History</string>
 </resources>
