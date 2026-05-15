@@ -1,5 +1,7 @@
 package com.myapp.bankaccountprogram
 
+import java.util.Locale
+
 // This is the entry point for running the code as a simple Kotlin program
 fun main(){
 
@@ -16,5 +18,5 @@ fun main(){
     // Show the results in the console
     johnsBankAccount.displayTransactionHistory()
     println("${johnsBankAccount.accountHolder}'s " +
-            "balance is ${johnsBankAccount.balance}")
+            "balance is $${String.format(Locale.US, "%.2f", johnsBankAccount.balance)}")
 }
