@@ -31,7 +31,19 @@ class MainActivity : AppCompatActivity() {
         val history = account.getTransactionHistory()
         val historyText = StringBuilder()
         for (transaction in history) {
-            historyText.append("• ").append(transaction).append("\n")
+            val typeStr = if (transaction.type == TransactionType.DEPOSIT) "Deposited" else "Withdrew"
+            val formattedAmount = String.format(Locale.US, "%.2f", transaction.amount)
+            val formattedBalance = String.format(Locale.US, "%.2f", transaction.balanceAfter)
+            
+            historyText.append("[")
+                .append(transaction.timestamp)
+                .append("] ")
+                .append(typeStr)
+                .append(" $")
+                .append(formattedAmount)
+                .append("\n  Balance: $")
+                .append(formattedBalance)
+                .append("\n\n")
         }
 
         // Update the UI with the history and balance
