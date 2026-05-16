@@ -2,4 +2,9 @@
     <string name="app_name">My Bank</string>
     <string name="current_balance">Current Balance</string>
     <string name="transaction_history">Transaction History</string>
+    <string name="amount_hint">Amount</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="error_invalid_amount">Please enter a valid amount</string>
+    <string name="error_insufficient_funds">Insufficient funds</string>
 </resources>
