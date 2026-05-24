@@ -21,20 +21,9 @@ This project serves as a cornerstone of my Android learning path, demonstrating 
 > This section showcases the interactive UI of the application.
 
 <p align="center">
-  <table>
-    <tr>
-      <td align="center"><b>Main Dashboard</b></td>
-      <td align="center"><b>Transaction Success</b></td>
-    </tr>
-    <tr>
-      <td><img src="https://via.placeholder.com/300x600?text=Placeholder:+Main+Screen" width="250" alt="Main Screen Screenshot"></td>
-      <td><img src="https://via.placeholder.com/300x600?text=Placeholder:+Success+State" width="250" alt="Success State Screenshot"></td>
-    </tr>
-    <tr>
-      <td align="center"><i>Visualizing current balance and action cards</i></td>
-      <td align="center"><i>Real-time history updates</i></td>
-    </tr>
-  </table>
+  <img src="https://github.com/user-attachments/assets/6eecf6e0-7715-4f4a-820a-b5f3cd3a6748" width="24%">
+  <img src="https://github.com/user-attachments/assets/f4fd022c-d1ba-4174-a6b5-6f3e2b468a4d" width="24%">
+  <img src="https://github.com/user-attachments/assets/8bc0b4d3-64f9-4bcd-a2d7-57501208cdf9" width="24%">
 </p>
 
 ---
