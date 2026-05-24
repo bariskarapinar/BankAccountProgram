@@ -1,4 +1,4 @@
-# 🏦 Bank Account Program - Kotlin Learning Journey
+# 🏦 Bank Account Program
 
 <p align="center">
   <img src="https://img.shields.io/badge/Kotlin-1.9.10-blue.svg?style=for-the-badge&logo=kotlin" alt="Kotlin">
